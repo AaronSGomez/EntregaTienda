@@ -7,15 +7,15 @@
 
 :root {
   --primary-color: rgb(236, 236, 236);
-  --secondary-color: #1c1e21;
-  --terciary-color: #2a2d31;
-  --border-color: #4a4b4b;
+  --secondary-color: #1c1e19;
+  --terciary-color: #18191a;
+  --border-color: #3f4143;
   --orange-color: #eb6f40;
   --spacing: 28px;
   font-family: 'Delius', serif;
   margin: 0;
   padding: 0;
-  background-color: #18191a;
+  background-color: #1c1e21;
 }
 h4 {
   color: var(--primary-color);
@@ -25,8 +25,15 @@ h4 {
 body {
   padding: 0;
   margin: 0;
-  width: 100%;
   color: var(--primary-color);
+  display: grid;
+  max-width: 98%;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 30px;
 }
 .logo {
   width: 100%;
@@ -45,7 +52,6 @@ header {
   max-width: 100%;
   text-align: center;
   align-items: center;
-  /* justify-items: center; */
   justify-content: center;
   align-content: center;
   font-size: 18px;
@@ -58,7 +64,6 @@ nav {
   padding: 0;
   display: grid;
   grid-template-rows: 45% 55%;
-
   align-self: start;
 }
 .session {
@@ -116,27 +121,48 @@ a:hover {
 }
 
 main {
-  border-top: #4a4b4b 4px solid;
-  border-bottom: #4a4b4b 4px solid;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   display: grid;
+  max-width: 100%;
   grid-template-columns: 1fr 4fr;
+  padding: 10px;
 }
 .navegador {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 50px 1fr;
-  align-items: center;
-  justify-items: baseline;
-  padding: 20px;
+  border: 1px solid var(--border-color);
+  width: auto;
+  justify-items: start;
+  align-items: start;
+  justify-content: start;
+  align-content: start;
+  padding: 10px;
+}
+.navegador > h2 {
+  align-self: center;
+  text-transform: uppercase;
+  font-size: 17px;
+  letter-spacing: 0.5rem;
 }
 .navegador > ul {
   display: grid;
+  padding: 0;
+  margin: 0;
   grid-template-columns: 1fr;
+  width: 100%;
   grid-template-rows: repeat(10, 50px);
   list-style: none;
-  padding: 20px;
-  gap: 5px;
-  align-self: start;
+  justify-items: start;
+  border: 1px solid var(--border-color);
+  justify-items: start;
+  align-items: center;
+  justify-self: start;
+}
+.navegador > ul > li {
+  min-width: 100%;
+  padding: 10px;
 }
 
 .modelos {
@@ -144,19 +170,19 @@ main {
 }
 .gallery {
   display: grid;
-  width: 100%;
+  max-width: 100%;
   grid-template-columns: repeat(4, 300px);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: auto;
   list-style: none;
   padding: 20px;
   margin: 0;
   gap: var(--spacing);
 }
 .gallery > li > img {
-  width: 250px;
-  height: 250px;
+  width: 298px;
+  height: 298px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 1px;
 }
 .gallery > li {
   display: grid;
@@ -164,9 +190,9 @@ main {
   grid-template-rows: 1fr 40px;
   align-items: center;
   justify-items: center;
-  padding: 10px;
-  border: 2px solid var(--secondary-color);
-  border-radius: 10px;
+  padding: 0px;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
   background: var(--terciary-color);
   color: var(--primary-color);
   text-align: center;
