@@ -291,8 +291,8 @@ h4 {
     display: none;
   }
   .logo {
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
     object-fit: cover;
     filter: drop-shadow(0px 2px 4px #eb6f40);
   }
