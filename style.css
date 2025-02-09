@@ -17,19 +17,22 @@
   padding: 0;
   background-color: #1c1e21;
 }
+a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
 
 body {
-  padding: 0;
-  margin: 0;
   color: var(--primary-color);
   display: grid;
-  max-width: 98%;
+  max-width: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
   justify-content: center;
   height: 100vh;
-  padding: 30px;
 }
 .logo {
   width: 100%;
@@ -131,44 +134,43 @@ main {
   display: grid;
   max-width: 100%;
   grid-template-columns: 1fr 4fr;
-  padding: 10px;
+  padding: 40px;
 }
+
+/* menu navegacion parte izquierda */
 .navegador {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, auto);
-  width: auto;
-  justify-items: start;
-  align-items: start;
-  justify-content: start;
-  align-content: start;
-  padding: 10px;
+  padding: 15px;
 }
-.navegador > h2 {
-  align-self: center;
+.navegador > ul > li > h2 {
   text-transform: uppercase;
-  font-size: 17px;
+  font-size: 16px;
   letter-spacing: 0.5rem;
+  margin: 0;
 }
 .navegador > ul {
   display: grid;
-  padding: 0;
-  margin: 0;
   grid-template-columns: 1fr;
-  width: 100%;
-  grid-template-rows: repeat(10, 50px);
+  grid-template-rows: repeat(11, 1fr);
   list-style: none;
-  justify-items: start;
-  border: 1px solid var(--border-color);
-  justify-items: start;
+  justify-content: center;
   align-items: center;
-  justify-self: start;
+  gap: 10px;
+}
+.navegador > ul > li:first-child {
+  background-color: var(--orange-color);
 }
 .navegador > ul > li {
-  max-width: 100%;
-  padding: 10px;
+  background-color: var(--terciary-color);
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--border-color);
+  padding: 5px;
+}
+.navegador > ul > li > a {
+  font-variant: small-caps;
 }
 
+/* pasamos a la grilla de los modelos  y galeria de imagenes */
 .modelos {
   padding: 20px;
   display: grid;
@@ -218,8 +220,11 @@ h4 {
 
 footer {
   display: grid;
+  max-width: 100%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
+  padding: 20px;
+  background-color: var(--terciary-color);
 }
 footer > img {
   justify-self: start;
