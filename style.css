@@ -193,8 +193,8 @@ main {
   gap: var(--spacing);
 }
 .gallery > li > img {
-  max-width: 260px;
-  max-height: 260px;
+  max-width: 280px;
+  max-height: 280px;
   object-fit: cover;
   border-radius: 1px;
 }
@@ -285,8 +285,8 @@ footer > ul > li {
     grid-template-rows: repeat(auto-fill, minmax(190px, 1fr));
   }
   .gallery > li > img {
-    max-width: 210px;
-    max-height: 210px;
+    max-width: 280px;
+    max-height: 280px;
   }
   h4 {
     font-size: 12px;
@@ -335,8 +335,8 @@ footer > ul > li {
     grid-template-rows: repeat(auto-fill, minmax(180px, 1fr));
   }
   .gallery > li > img {
-    max-width: 240px;
-    max-height: 240px;
+    max-width: 280px;
+    max-height: 280px;
   }
   h4 {
     font-size: 12px;
