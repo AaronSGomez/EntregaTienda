@@ -23,6 +23,17 @@ a {
 a:visited {
   text-decoration: none;
 }
+h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.5rem;
+  margin: 0;
+}
+h4 {
+  color: var(--primary-color);
+  font-size: 15px;
+  font-variant: small-caps;
+}
 
 body {
   color: var(--primary-color);
@@ -141,12 +152,6 @@ main {
 .navegador {
   padding: 15px;
 }
-.navegador > ul > li > h2 {
-  text-transform: uppercase;
-  font-size: 16px;
-  letter-spacing: 0.5rem;
-  margin: 0;
-}
 .navegador > ul {
   display: grid;
   grid-template-columns: 1fr;
@@ -211,13 +216,7 @@ main {
   cursor: pointer;
   overflow: hidden; /* oculta el exceso de imagen */
 }
-
-h4 {
-  color: var(--primary-color);
-  font-size: 15px;
-  font-variant: small-caps;
-}
-
+/*  pie de pagina */
 footer {
   display: grid;
   max-width: 100%;
