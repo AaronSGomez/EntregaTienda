@@ -274,17 +274,20 @@ footer > ul > li {
   body {
     font-size: 14px;
   }
+  main {
+    padding: 10px;
+  }
   .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
     gap: 10px;
   }
   .gallery > li {
     grid-template-columns: auto;
-    grid-template-rows: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(190px, 1fr));
   }
   .gallery > li > img {
-    max-width: 240px;
-    max-height: 240px;
+    max-width: 210px;
+    max-height: 210px;
   }
   h4 {
     font-size: 12px;
@@ -325,12 +328,12 @@ footer > ul > li {
     padding: 5px;
   }
   .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 10px;
   }
   .gallery > li {
     grid-template-columns: auto;
-    grid-template-rows: repeat(auto-fill, minmax(210px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(180px, 1fr));
   }
   .gallery > li > img {
     max-width: 240px;
