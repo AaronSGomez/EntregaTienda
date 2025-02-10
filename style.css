@@ -275,6 +275,7 @@ footer > ul > li {
   }
   main {
     padding: 0px;
+    grid-template-columns: 1fr 6fr;
   }
   .gallery {
     grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
